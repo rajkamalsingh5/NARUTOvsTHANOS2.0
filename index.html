@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+<style>
+    *{
+    margin: 0%;
+    background-color: black;
+    padding: 0%;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    margin:50px 50px;
+   
+    color: rgba(255, 255, 255, 0.458);
+   
+    }
+.intro{
+    font-size: 17px;
+    font-weight: 10;
+    font-style: italic;
+    padding: 50px 30px;
+}
+.intro a{
+    text-decoration: none;
+    font-size: 30px;
+    background-color: gray;
+    width: 50px;
+    height: 70px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: auto;
+}
+.name h1 {
+    overflow: hidden;
+    white-space:nowrap;
+    border-right: 2px solid white;
+    animation: text 3s steps(19) infinite alternate;
+}
+@keyframes text {
+    0%{
+        width: 0ch;
+    }25%{
+        width: 7ch;
+    }75%{
+        width: 14ch;
+    }100%{
+        width: 19ch;
+    }
+    
+}
+
+.intro div{
+    padding: 8px;
+}
+.image{ 
+    margin-right: 60px;
+}
+.image img{
+    margin-right: 0px;
+    box-shadow: 1px .5px red;
+   width: 200px;
+   border-radius: 30%;
+    height: 250px;
+    bottom: 50px;
+    padding: 100px 50px;
+}
+@media (max-width:950px){
+.home{
+    font-size: 9px;
+    height: 100vh;
+}
+.image{
+    width: 500px;
+    height: 500px;
+}
+.image img{
+bottom: 100px;
+    /* margin-right: 100px; */
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px .5px red;
+
+}
+}
+@media (max-width:800px){
+    .home{
+    font-size: 7px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    width: 300px;
+    height: 300px;
+}
+.image img{
+bottom: 100px;
+    /* margin-right: 100px; */
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px .5px red;
+
+}
+}
+@media (max-width:760px){
+    .home{
+        left: 0px;
+        padding: 0%;
+    font-size: 5px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.intro{
+    text-align: left;
+    margin-left: 0%;
+    flex-wrap: wrap;
+    left: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0%;
+}
+.image{
+    width: 280px;
+    height: 280px;
+}
+.image img{
+bottom: 100px;
+    /* margin-right: 100px; */
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px red;
+
+}
+}
+@media (max-width:450px){
+    .home{
+        left: 0px;
+        padding: 0%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.intro{
+
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+    .image{
+    width: 280px;
+    height: 280px;
+}
+    .image img{
+bottom: 100px;
+    /* margin-right: 100px; */
+    width: 200px;
+    height: 200px;
+    box-shadow: 2px 2px red;
+
+}
+}
+</style>
+</head>
+<body>
+<div class="home" id="home">
+    <div class="intro">
+        <div>
+            <h1> Web Developer/Coder</h1>
+        </div>
+        <div class="name">
+            
+            <h1> Hi,I'm<span  style="color: rgba(255, 0, 0, 0.616);">RAJKAMAL</span></h1>
+        </div>
+        <div>
+            <h1>Singh Web Developer From <span style="color: red;">NIT-B </span>(2022-2026)</h1>
+
+        </div>
+        <a href="naruto.html">Let's Go</a>
+    </div>
+    <div class="image">
+<img src="port.jfif" alt="rajubhai">
+    </div>
+</div>
+</body>
+</html>

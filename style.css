@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+
+    padding: 0;
+}
+body{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+}
+
+#scoreCount{
+    position: relative;
+    top: 65px;
+    text-align: center;
+  color: #66545e;
+  text-shadow: 3px 2px black;
+    justify-content:center;
+    font-size: 90px;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration:none;
+
+
+}
+.gameover{
+    position: relative;
+    top: 65px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 5px black;
+    justify-content:center;
+    font-size: 100px;
+    font-weight: bolder;
+    font-style: italic;
+    /* text-decoration: line-through; */
+
+    visibility: hidden;
+}
+.container{
+    background-image: url(background.webp);
+    
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+.repaly{
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+    color: cyan;
+    font-size: 25px;
+    margin-top: 60px;
+    cursor: pointer;
+    margin-left: 590px;
+    visibility: hidden;
+    align-items: center;
+
+}
+.naruto{
+    background-image: url(naruto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 280px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+transition-property: left;
+transition-duration: .3s;
+}
+.thanos{
+    background-image: url(thanos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 230px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    
+}
+.animate{
+    animation: naruto .8s linear;
+}
+
+.animateThanos{
+    animation: aniThanos 3s linear infinite;
+}
+@keyframes naruto {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 525px;
+    }100%{
+        bottom: 0;
+    }
+    
+}
+
+@keyframes aniThanos {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+/* ================================================= */
+@media (max-width:690px) {
+
+    #scoreCount{
+
+        top: 65px;
+        
+        font-size: 50px;
+    
+    
+    }
+    body{
+        overflow: hidden;
+    }
+
+    .gameover{
+       
+        top: 75px;
+        font-size: 70px;
+       
+    }
+    .container{
+        background-image: url(background.webp);
+        height: 100vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        background-position: 79%;
+        justify-content: center;
+    }
+    .repaly{
+       
+        font-size: 45px;
+        margin-top: 200px;
+        margin-left: 100px;
+      
+    }
+    .naruto{
+        background-image: url(naruto.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        left: 7px;
+    transition-property: left;
+    transition-duration: .3s;
+    }
+    .thanos{
+        background-image: url(thanos.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        left: 50vw;
+        
+    }
+    .animate{
+        animation: naruto .8s linear;
+    }
+    
+    .animateThanos{
+        animation: aniThanos 1s linear infinite;
+    }
+    @keyframes naruto {
+        0%{
+            bottom: 0;
+        }
+        50%{
+            bottom: 325px;
+        }100%{
+            bottom: 0;
+        }
+        
+    }
+    
+    @keyframes aniThanos {
+        0%{
+            left: 100vw;
+        }
+        100%{
+            left: -10vw;
+        }
+    }
+}
+ @media (max-width:470px) {
+
+    #scoreCount{
+
+        top: 45px;
+        
+        font-size: 35px;
+
+    }
+    body{
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .gameover{
+       
+        top: 55px;
+        font-size: 50px;
+       
+    }
+    .container{
+        height: 100vh;
+        background-position: 80%;
+    }
+    .repaly{
+        margin-top: 150px;
+    }
+    
+} 
